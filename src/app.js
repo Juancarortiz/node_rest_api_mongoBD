@@ -9,7 +9,7 @@ const bookRoutes = require('./routers/book.routes');
 
 //middleware (usamos -> express)
 const app = express();
-app.use(bodyParser.json()); // parceador de bodies
+app.use(bodyParser.json()); // parceador de bodiess
 
 // conectamos la Base de datos
 mongoose.connect(process.env.MONGO_URL, { dbName: process.env.MONGO_DB_NAME});
