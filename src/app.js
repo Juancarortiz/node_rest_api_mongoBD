@@ -11,7 +11,7 @@ const bookRoutes = require('./routers/book.routes');
 const app = express();
 app.use(bodyParser.json()); // parceador de bodies
 
-// conectamos la BD
+// conectamos la Base de datos
 mongoose.connect(process.env.MONGO_URL, { dbName: process.env.MONGO_DB_NAME});
 const db = mongoose.connection;
 
